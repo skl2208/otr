@@ -1,0 +1,81 @@
+:root {
+  --bgbody: #444444;
+  --fontbody-dark: yellow;
+  --bgwhite: #333333;
+  --fontwhite: yellow;
+  --lightpinkcolor: #999999;
+  --bgpink: #999999;
+  --linkhovercolor: #bbb3b8;
+  --bgfooter: #333333;
+  --fontfooter: yellow;
+  --head-menu-bg: #666666;
+  --darkbluefontcolor: yellow;
+  --lightbluefontcolor: yellow;
+  --lightbluebg: #555555;
+  --darkpinkcolor: #666666;
+  --fontdarkpinkcolor : yellow;
+  --lightbrowncolor: #eafbcf;
+  --figcaptionbg: #444444;
+  --figcaptioncolor: yellow;
+  --figcaptionbg1: #444444;
+  --figcaptioncolor1: yellow;
+  --figcaptionbg2: #444444;
+  --figcaptioncolor2: yellow;
+  --figcaptionbg3: #444444;
+  --figcaptioncolor3: yellow;
+  --figcaptionbg4: #444444;
+  --figcaptioncolor4: yellow;
+  --input-border: #999999;
+  --border-general: yellow;
+  --input-focus-bg: #bbbbbb;
+  --input-focus-visible-border: #bbbbbb;
+  --rootnavigator: yellow;
+  --dropdown-header: yellow;
+  --dropdown-header-bg: #333333;
+  --dropdown-menu-bg: #333333;
+  --dropdown-border: #bbbbbb;
+  --dropdown-box-shadow: #666666;
+  --dropdown-item-hover: white;
+  --dropdown-item-hover-bg: #000000;
+  --primary-dark-border: yellow;
+  --news--bg: #333333;
+  --bhumibol-hospital-border: #bbbbbb;
+  --filter-bg: grayscale(1);
+  --list-linksite-bg: #666666;
+  --list-linksite-hover-bg: #999999;
+  --g-border-color: #bbbbbb;
+  --download-btn-bg: #000000;
+  --download-btn: yellow;
+  --pagelink-active: #000000;
+  --alert-bg: black;
+  --alert-color: yellow;
+  --shadow-color: #333333;
+  --toast-bg: rgba(173, 200, 231, 0.95);
+  --toast-warn-bg: rgba(219, 179, 105, 0.95);
+  --toast-danger-bg: rgba(240, 173, 173, 0.95);
+  --toast-color: #153b66;
+  --btn-green-bg: #333333;
+  --btn-cancel-bg: #666666;
+}
+
+img {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+.head-menu,
+.news-template4-firstnews,
+.news-template3-firstnews > div a > div:first-child,
+.news-template3-othernews > div a > div:first-child {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+.news-template4-headnews,
+.news-template3-headnews,
+.news-template2-headnews,
+.news-template1-headnews {
+  background-image: none!important;
+}
+#scrollBtn {
+  filter: brightness(0) saturate(100%) invert(83%) sepia(99%) saturate(6639%) hue-rotate(358deg) brightness(106%) contrast(101%);
+  -webkit-filter: brightness(0) saturate(100%) invert(83%) sepia(99%) saturate(6639%) hue-rotate(358deg) brightness(106%) contrast(101%);
+}

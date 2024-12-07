@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta lang="TH">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>กองอายุรกรรม โรงพยาบาลภูมิพลอดุลยเดช กรมแพทย์ทหารอากาศ</title>
+
+<head>
+    <link rel="icon" type="image/png" href="images/logo_MED.png" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.1.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/color.css" title="default">
+    <link rel="alternate stylesheet" type="text/css" href="css/blind.css" title="blind_yellow">
+    <link rel="stylesheet" type="text/css" href="css/normal.css">
+    <script type="text/javascript" src="jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <section class="head-menu">
+        <div class="">
+            <div class="container-fluid content_width">
+                <div class="row px-4">
+                    <div
+                        class="col-lg-1 col-md-1 col-2 text-start text-lg-center text-md-center p-3 head-image-section1">
+                    </div>
+                    <div class="col-md col-sm col-5 unit-name p-3">
+                        <div class="unit-name-1 pl-3 ml-3">
+                            กองอายุรกรรม
+                        </div>
+                    </div>
+                    <div class="col-md col-sm col-5 hospital-name p3 text-end" style="position: relative;">
+                        <div class="unit-name-2 pl-3 ml-3 text-end">
+                            <span>โรงพยาบาลภูมิพลอดุลยเดช
+                                กรมแพทย์ทหารอากาศ</span><br><span>BHUMIBOL ADULYADEJ HOSPITAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-icon-header">
+                <!-- ส่วนบนสุดที่จะใส่ icon login,ตัวเปลี่ยนธีม -->
+                <a href="login.html" title="สำหรับเจ้าหน้าที่"><img src="images/icon_login.png"
+                        title="Login สำหรับเจ้าหน้าที่">
+                    Login</a> | <a href="javascript:void(0)" title="ธีมสีแบบปกติ" id="setNormalTheme"><img
+                        src="images/icon_normal_theme.png"></a> <a href="javascript:void(0)" title="ธีมสีผู้ที่ตาบอดสี"
+                    id="setBlindTheme"><img src="images/icon_blind_theme.png"></a> | <a href="" title="ลดขนาดลง"
+                    class="smallerFont" id="setSmallerSize">A</a> <a href="" title="ขนาดปกติ" id="setNormalSize">A</a>
+                <a href="" title="ขนาดใหญ่ขึ้น" class="biggerFont" id="setBiggerSize">A</a>
+            </div>
+        </div>
+    </section>
+    <section class="navbar-sect">
+        <div class="nav-section shadow-sm">
+            <nav class="navbar navbar-expand-lg navbar-dark pt-0 pb-0">
+                <div class="container-fluid text-center">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><img src="images/logo_MED_white.png" style="height:20px;width:auto" title="หน้าแรก"></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    หน่วยงาน
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="bhumibol_hospital.html">รพ.ภูมิพลอดุลยเดช พอ.</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <h5 class="dropdown-header">กองอายุรกรรม รพ.ภูมิพลอดุลยเดช พอ.</h5>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">ประวัติ</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="medical_mission_vision.html">พันธกิจ / วิสัยทัศน์
+                                            / ภารกิจ ขอบเขตความรับผิดชอบ และหน้าที่สำคัญ</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="medical_list_director.html">รายนามผู้อำนวยการ</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">บุคลากร</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">สาขาวิชา</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="organization_cardiology.html">อายุรศาสตร์โรคหัวใจและหลอดเลือด
+                                            (Cardiology)</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="organization_nephrology.html">อายุรศาสตร์โรคไต
+                                            (Nephrology)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">อายุรศาสตร์โรคระบบทางเดินอาหาร
+                                            (Gastroenterology)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">อายุรศาสตร์โรคต่อมไร้ท่อและเมตะบอลิสม
+                                            (Endocrinology and Metabolic disorders)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">อายุรศาสตร์โรคระบบการหายใจและเวชบำบัดวิกฤต
+                                            (Pulmonary and Critical care medicine)</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">อายุรศาสตร์ประสาทวิทยา (Neurology)</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">อายุรศาสตร์โรคติดเชื้อ (Infectious
+                                            disease)</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">อายุรศาสตร์โรคเลือด (Hematology)</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">อายุรศาสตร์มะเร็งวิทยา (Oncology)</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">อายุรศาสตร์โรคข้อ และรูมาติสซั่มและภูมิแพ้
+                                            (Allergy, Immunology, and Rheumatology)</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">โภชนศาสตร์คลินิก (Clinical Nutrition) </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">ตจวิทยา (Dermatology)</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">พิษวิทยา (Toxicology)</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">จิตเวชศาสตร์ (Psychiatry)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">การศึกษา</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#">การศึกษาก่อนปริญญา</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">การศึกษาหลังปริญญา</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">วิชาการ</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#">งานวิจัย</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">งานประชุม</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item disabled" href="#">E-learning</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Excellence Center</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#">ศูนย์ความเป็นเลิศด้านโรคสมอง</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">ศูนย์ความเป็นเลิศด้านโรคไต</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">ศูนย์ความเป็นเลิศด้านโรคมะเร็ง</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">คลีนิค</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#">ในเวลาราชการ</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="http://www.bhumibolhospital.rtaf.mi.th/index.asp?parent=739&pageid=828&directory=3212&contents=871&pagename=content"
+                                            target="_blank">นอกเวลาราชการ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ดาวน์โหลด</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="linkbanner.html">LINK</a>
+                            </li>
+                            <li class="nav-item search-menu dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false"><img src="images/icon_search.png"
+                                        style="height:20px;width:auto"></a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <form class="d-flex">
+                                            <input class="form-control ms-2 me-2" type="search" placeholder="คำค้นหา"
+                                                aria-label="Search"
+                                                style="min-width:200px;width:100%;border-color:#eaa2c5;">
+                                            <button class="btn btn-outline-success" type="submit">ค้นหา</button>
+                                        </form>
+
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!--<a href="#"><img src="images/icon_search.png" style="height:20px;width:auto"></a>
+                         <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="shadow-sm">
+        <div id="carouselBanner" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/ad1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/ad2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/ad3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="main-content-1block mx-lg-5 mx-md-4 mx-sm-1 mt-lg-4 mt-md-4 mt-sm-0">
+        <div class="container-fluid">
+            <div class="row px-lg-2 px-md-1 px-sm-0">
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                    <div class="news shadow-sm">
+                        <div class="container-fluid mx-0 px-lg-5 px-md-4 px-sm-0 py-lg-4 py-md-4 py-3">
+                            <div class="row gx-3">
+                                <div class="col-12 text-lg-start text-md-start text-center">
+                                    <h3>ข่าวกิจกรรม</h3>
+                                </div>
+                                <div class="col-lg-6 col-md-6" style="height:400px">
+                                    <a href="" title="ประชุมวิชาการ โรคระบบทางเดินอาหาร ประจำปี 2020">
+                                        <div class="showSmallNews">
+                                            <figure class="fig-news">
+                                                <div class="d-lg-grid d-md-grid"
+                                                    style="background-image:url('images/test-pic-annouce.jpg');">
+                                                </div>
+                                                <div>
+                                                    <figcaption>ประชุมวิชาการ โรคระบบทางเดินอาหาร ประจำปี 2020
+                                                    </figcaption>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+
+                                </div>
+                                <div class="col-lg col-md-4">
+                                    <a href=""
+                                        title="หลักสูตรการฝึกอบรมแพทย์ประจาบ้านต่อยอดอนุสาขาอายุรศาสตร์โรคระบบทางเดินอาหาร">
+                                        <div class="showSmallNews">
+                                            <figure class="fig-news">
+                                                <div class="d-lg-grid d-md-grid"
+                                                    style="background-image:url('images/test-pic-annouce2.jpg');">
+                                                </div>
+                                                <div>
+                                                    <figcaption>
+                                                        หลักสูตรการฝึกอบรมแพทย์ประจาบ้านต่อยอดอนุสาขาอายุรศาสตร์โรคระบบทางเดินอาหาร
+                                                    </figcaption>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg col-md-4">
+                                    <a href=""
+                                        title="ด่วน! รับสมัครแพทย์ต่อยอดทางเดินอาหาร ( Fellow GI) ปีการศึกษา 2564 จำนวน 2 ตำแหน่ง">
+                                        <div class="showSmallNews">
+                                            <figure class="fig-news">
+                                                <div class="d-lg-grid d-md-grid"
+                                                    style="background-image:url('images/test-pic-annouce3.jpg');">
+                                                </div>
+                                                <div>
+                                                    <figcaption>ด่วน! รับสมัครแพทย์ต่อยอดทางเดินอาหาร ( Fellow GI)
+                                                        ปีการศึกษา 2564 จำนวน 2 ตำแหน่ง
+                                                    </figcaption>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg col-md-4">
+                                    <a href="" title="ประชุมวิชาการ โรคระบบทางเดินอาหาร ประจำปี 2020">
+                                        <div class="showSmallNews">
+                                            <figure class="fig-news">
+                                                <div class="d-lg-grid d-md-grid"
+                                                    style="background-image:url('images/test-pic-annouce2.jpg');">
+                                                </div>
+                                                <div>
+                                                    <figcaption>ประชุมวิชาการ โรคระบบทางเดินอาหาร ประจำปี 2020
+                                                    </figcaption>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg col-md-4">
+                                    <a href="" title="ประชุมวิชาการ โรคระบบทางเดินอาหาร ประจำปี 2020">
+                                        <div class="showSmallNews">
+                                            <figure class="fig-news">
+                                                <div class="d-lg-grid d-md-grid"
+                                                    style="background-image:url('images/test-pic-annouce2.jpg');">
+                                                </div>
+                                                <div>
+                                                    <figcaption>ประชุมวิชาการ โรคระบบทางเดินอาหาร ประจำปี 2020
+                                                    </figcaption>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div
+                                    class="col-12 text-lg-start text-md-start text-lg-end text-md-end text-center seeall-font">
+                                    <a href="" title="แสดงข้อมูลทั้งหมด">แสดงทั้งหมด</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                    <div class="news shadow-sm">
+                        <div class="container-fluid mx-0 px-lg-5 px-md-4 px-sm-0 py-lg-4 py-md-4 py-3">
+                            <div class="row gx-3">
+                                <div class="col-12 text-lg-start text-md-start text-center">
+                                    <h3>ประกาศ</h3>
+                                </div>
+                                <div class="col-lg col-md-4">
+                                    <a href="" title="ประชุมวิชาการ โรคระบบทางเดินอาหาร ประจำปี 2020">
+                                        <div class="showSmallNews">
+                                            <figure class="fig-news">
+                                                <div class="d-lg-grid d-md-grid"
+                                                    style="background-image:url('images/test-pic-annouce.jpg');">
+                                                </div>
+                                                <div>
+                                                    <figcaption>ประชุมวิชาการ โรคระบบทางเดินอาหาร ประจำปี 2020
+                                                    </figcaption>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg col-md-4">
+                                    <a href=""
+                                        title="หลักสูตรการฝึกอบรมแพทย์ประจาบ้านต่อยอดอนุสาขาอายุรศาสตร์โรคระบบทางเดินอาหาร">
+                                        <div class="showSmallNews">
+                                            <figure class="fig-news">
+                                                <div class="d-lg-grid d-md-grid"
+                                                    style="background-image:url('images/test-pic-annouce2.jpg');">
+                                                </div>
+                                                <div>
+                                                    <figcaption>
+                                                        หลักสูตรการฝึกอบรมแพทย์ประจาบ้านต่อยอดอนุสาขาอายุรศาสตร์โรคระบบทางเดินอาหาร
+                                                    </figcaption>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg col-md-4">
+                                    <a href=""
+                                        title="ด่วน! รับสมัครแพทย์ต่อยอดทางเดินอาหาร ( Fellow GI) ปีการศึกษา 2564 จำนวน 2 ตำแหน่ง">
+                                        <div class="showSmallNews">
+                                            <figure class="fig-news">
+                                                <div class="d-lg-grid d-md-grid"
+                                                    style="background-image:url('images/test-pic-annouce3.jpg');">
+                                                </div>
+                                                <div>
+                                                    <figcaption>ด่วน! รับสมัครแพทย์ต่อยอดทางเดินอาหาร ( Fellow GI)
+                                                        ปีการศึกษา 2564 จำนวน 2 ตำแหน่ง
+                                                    </figcaption>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg col-md-4">
+                                    <a href="" title="ประชุมวิชาการ โรคระบบทางเดินอาหาร ประจำปี 2020">
+                                        <div class="showSmallNews">
+                                            <figure class="fig-news">
+                                                <div class="d-lg-grid d-md-grid"
+                                                    style="background-image:url('images/test-pic-annouce2.jpg');">
+                                                </div>
+                                                <div>
+                                                    <figcaption>ประชุมวิชาการ โรคระบบทางเดินอาหาร ประจำปี 2020
+                                                    </figcaption>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg col-md-4">
+                                    <a href="" title="ประชุมวิชาการ โรคระบบทางเดินอาหาร ประจำปี 2020">
+                                        <div class="showSmallNews">
+                                            <figure class="fig-news">
+                                                <div class="d-lg-grid d-md-grid"
+                                                    style="background-image:url('images/test-pic-annouce2.jpg');">
+                                                </div>
+                                                <div>
+                                                    <figcaption>ประชุมวิชาการ โรคระบบทางเดินอาหาร ประจำปี 2020
+                                                    </figcaption>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div
+                                    class="col-12 text-lg-start text-md-start text-lg-end text-md-end text-center seeall-font">
+                                    <a href="" title="แสดงข้อมูลทั้งหมด">แสดงทั้งหมด</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-content-1block-full medicshift pt-3 pb-3">
+        <div class="medicshift-content mt-3 mb-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 text-center">
+                        <h3>ตารางเวรแพทย์</h3><img src="images/medic.png" width="100%">
+                    </div>
+                    <div class="col-lg-5 col-md-5">
+                        เนื้อหา
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-sect shadow-sm">
+        <div class="container-fluid mt-4 mb-4">
+            <div class="row">
+                <!-- <div class="col-lg-4 col-md-4 col-sm-12">
+                    <ul>แผนกอายุรกรรม โรงพยาบาลภูมิพล
+                        <li>ข่าวกิจกรรม</li>
+                        <li>ประชาสัมพันธ์</li>
+                        <li>ประกาศ</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <ul>ตารางเวรแพทย์<li>ตารางเวรแพทย์ในเวลา</li>
+                        <li>ตารางเวรแพทย์นอกเวลา</li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <ul>ดาวน์โหลด<li>แบบฟอร์ม 1</li>
+                        <li>แบบฟอร์ม 2</li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12"></div>
+                <div class="col-lg-4 col-md-4 col-sm-12" style="border-top:1px solid white"></div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12"></div> -->
+                <div class="col-lg-3 col-md-3 col-12 order-lg-first order-md-first order-last"><img src="images/logo_MED_white.png" style="width:100%;height:auto;max-width: 250px;"></div>
+                <div class="col-lg-6 col-md-6 col-12 text-center">
+                    <a href=""><img src="images/fb_logo.png"></a><a href="#"><img
+                        src="images/line_logo.png"></a><a href="#"><img src="images/twitter_logo.png"></a><a
+                    href="#"><img src="images/youtube_logo.png"></a><br>&copy; โรงพยาบาลภูมิพลอดุลยเดช
+                    กรมแพทย์ทหารอากาศ All
+                    Rights Reserved<br>
+                    171 กองอายุรกรรมชั้น 4 อาคาร คุ้มเกล้า โรงพยาบาลภูมิพลอดุลยเดช แขวงคลองถนน เขตสายไหม กทม. 10220<br>
+                    e-mail:
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+:root {
+  --alert-bg: rgba(173, 200, 231, 0.95);
+  --alert-color: black;
+  --shadow-color: #333333;
+}
+#showAlert,
+#showConfirm {
+  z-index: 5000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000060;
+  display: none;
+}
+#showAlert > div,
+#showConfirm > div {
+  padding: 5px 20px;
+  background-color: var(--alert-bg);
+  color: var(--alert-color);
+  box-shadow: 1px 1px 5px var(--shadow-color);
+  border: 1px solid var(--alert-bg);
+  border-radius: 0.2rem;
+  min-width: 400px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+#showAlert > div div:first-child,
+#showConfirm > div div:first-child {
+  text-align: center;
+  display: block;
+}
+#showAlert > div div:nth-child(2),
+#showConfirm > div div:nth-child(2) {
+  text-align: center;
+  display: block;
+  padding: 1.5em 10px;
+}
+#showAlert > div div:last-child,
+#showConfirm > div div:last-child {
+  text-align: center;
+  display: block;
+}
+#showAlert button,
+#showConfirm button {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#showAlert img,
+#showConfirm img {
+  width: 80px;
+  height: 80px;
+  margin-top:-30px;
+}
