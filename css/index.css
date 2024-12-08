@@ -49,6 +49,7 @@ body {
   font-size: 40px;
   color: darkgreen;
 }
+
 .top-part {
   background-image: url("../images/top_part.jpg");
   background-position: center center;
@@ -66,41 +67,115 @@ body {
 }
 
 .show-news {
-  height: 300px;
-  overflow: hidden;
-  border: 1px solid red;
+  /* height: 280px; */
+  /* overflow-x:visible;
+  overflow-y: hidden; */
+  /* border: 1px solid red; */
 }
 
 div.scroll-container {
-  background-color: #fbf8f882;
   overflow: auto;
   white-space: nowrap;
-  padding:0;
+  padding: 0;
 }
 
-div.scroll-container img {
-  padding-top: 0;
+div.scroll-container div {
+  display: inline-block;
+  position: relative;
+  overflow-wrap: break-word;
+}
+
+div.scroll-container div div {
+  display: block;
+  position: absolute;
+  top: 260px;
+  /* bottom: 5px; */
+  left: 10px;
+  right: 10px;
+
+  overflow-wrap: break-word;
+  white-space: nowrap;
+  padding: 10px;
+  font-family: Prompt;
+  font-size: 15px;
+  background-color: white;
+  height: 60px;
+  border: 1px solid blue;
+  /* border-radius: 30px; */
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+figcaption , .caption {
+  padding: 10px;
+  height: 75px;
+  font-family: Prompt;
+  font-size: 14px;
+  overflow-y:hidden;
+  text-align: left;
+  background-color: #ffffff5c;
+}
+
+.border-red {
+  border: 1px solid red;
+}
+
+.border-blue {
+  border: 1px solid blue;
+}
+
+div.scroll-container div img {
+  padding-top: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 0;
+  padding-bottom: 5px;
+
+  max-height: 320px;
+  border-radius: 30px;
+  /* border-top-left-radius: 30px;
+  border-top-right-radius: 30px; */
+}
+
+.img-news {
+  max-width: 100%;
+  height: 70%;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+
+.news {
+  width: 450px;
+  height: 100%;
 }
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
   body {
     background-image: url("../images/bg2-m.jpg");
   }
-  .spec1{
+  .img-news {
+    border-radius: 20px;
+    display:inline-block;
+  }
+  .spec1 {
     left: 10px;
     right: 10px;
   }
+
   .show-news {
-    height: 200px;
+    height: 100%;
   }
+
   .welcome-en {
-    font-size : 25px;
+    font-size: 25px;
   }
+
   .welcome-th {
-    font-size : 20px;
+    font-size: 20px;
+  }
+  .caption {
+    text-align: center;
   }
 }
 
