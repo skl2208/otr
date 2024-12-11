@@ -25,17 +25,6 @@
 
 html {
   scroll-behavior: smooth;
-  background-image: url("../images/bg2.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-}
-
-body {
-  font-family: Prompt;
-  font-size: 16px;
-  background-color: darkgreen;
   /* background-image: url("../images/bg2.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -43,16 +32,37 @@ body {
   height: 100%; */
 }
 
+body {
+  font-family: Prompt;
+  font-size: 16px;
+  background-color: darkgreen;
+  background-image: url("../images/bg2.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.greeting {
+  top: 100px;
+}
+
 .welcome-th {
-  font-family: SaochingchaBold;
+  font-family: Prompt;
   font-size: 40px;
   color: darkgreen;
+  font-weight: bold;
 }
 
 .welcome-en {
-  font-family: Noland;
+  font-family: Prompt;
   font-size: 40px;
   color: darkgreen;
+  font-weight: bold;
 }
 
 .top-part {
@@ -72,10 +82,21 @@ body {
 }
 
 .show-news {
-  /* height: 280px; */
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   /* overflow-x:visible;
   overflow-y: hidden; */
   /* border: 1px solid red; */
+}
+
+.head-title {
+  font-family: Prompt;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 
 div.scroll-container {
@@ -95,8 +116,9 @@ div.scroll-container div div {
   position: absolute;
   top: 260px;
   /* bottom: 5px; */
-  left: 10px;
-  right: 10px;
+  width: 100%;
+  /* left: 10px;
+  right: 10px; */
 
   overflow-wrap: break-word;
   white-space: nowrap;
@@ -105,19 +127,20 @@ div.scroll-container div div {
   font-size: 15px;
   background-color: white;
   height: 60px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   /* border-radius: 30px; */
 
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
 
-figcaption , .caption {
+figcaption,
+.caption {
   padding: 10px;
   height: 75px;
   font-family: Prompt;
   font-size: 14px;
-  overflow-y:hidden;
+  overflow-y: hidden;
   text-align: left;
   background-color: #ffffff5c;
 }
@@ -132,8 +155,8 @@ figcaption , .caption {
 
 div.scroll-container div img {
   padding-top: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0;
+  padding-right: 0;
   padding-bottom: 5px;
 
   max-height: 320px;
@@ -143,8 +166,9 @@ div.scroll-container div img {
 }
 
 .img-news {
-  max-width: 100%;
-  height: 70%;
+  margin-right: 30px;
+
+  height: 200px;
   border-radius: 30px;
   box-shadow: 2px 2px 5px grey;
 }
@@ -156,13 +180,21 @@ div.scroll-container div img {
 }
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
-  html {
-    background-image: url("../images/bg2-m.jpg");
+  .greeting {
+    top: 50px;
   }
+  .head-title {
+    font-size: 15px;
+
+  }
+
   .img-news {
-    border-radius: 20px;
-    display:inline-block;
+    height: 70px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: inline-block;
   }
+
   .spec1 {
     left: 10px;
     right: 10px;
@@ -173,20 +205,16 @@ div.scroll-container div img {
   }
 
   .welcome-en {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .welcome-th {
     font-size: 20px;
   }
+
   .caption {
     text-align: center;
   }
 }
 
-@media screen and (min-width: 601px) {
-  html {
-    background-image: url("../images/bg2.jpg");
-  }
-
-}
+@media screen and (min-width: 601px) {}
